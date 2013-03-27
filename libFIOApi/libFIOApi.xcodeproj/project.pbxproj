@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15103F991702EDB900232519 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103F981702EDB900232519 /* Constants.m */; };
+		15103FAD1702EE0E00232519 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103F9B1702EE0E00232519 /* AFHTTPClient.m */; };
+		15103FAE1702EE0E00232519 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103F9D1702EE0E00232519 /* AFHTTPRequestOperation.m */; };
+		15103FAF1702EE0E00232519 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103F9F1702EE0E00232519 /* AFImageRequestOperation.m */; };
+		15103FB01702EE0E00232519 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FA11702EE0E00232519 /* AFJSONRequestOperation.m */; };
+		15103FB11702EE0E00232519 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FA31702EE0E00232519 /* AFNetworkActivityIndicatorManager.m */; };
+		15103FB21702EE0E00232519 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FA61702EE0E00232519 /* AFPropertyListRequestOperation.m */; };
+		15103FB31702EE0E00232519 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FA81702EE0E00232519 /* AFURLConnectionOperation.m */; };
+		15103FB41702EE0E00232519 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FAA1702EE0E00232519 /* AFXMLRequestOperation.m */; };
+		15103FB51702EE0E00232519 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FAC1702EE0E00232519 /* UIImageView+AFNetworking.m */; };
+		15103FB71702EE7100232519 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15103FB61702EE7100232519 /* SystemConfiguration.framework */; };
+		15103FB91702EE7900232519 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15103FB81702EE7900232519 /* MobileCoreServices.framework */; };
+		1531793617032AFB00F320AF /* FIOAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531793517032AFB00F320AF /* FIOAPIClient.m */; };
+		1531793A17032B0700F320AF /* FIORequestBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531793917032B0700F320AF /* FIORequestBlockOperation.m */; };
+		1531793E17032B1000F320AF /* FIORequestDelegateOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531793C17032B1000F320AF /* FIORequestDelegateOperation.m */; };
+		1531794117032B2B00F320AF /* FIORequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531794017032B2B00F320AF /* FIORequestOperation.m */; };
+		1531794417032B3400F320AF /* FIORequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531794317032B3400F320AF /* FIORequestQueue.m */; };
+		1531794717032B4100F320AF /* RequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531794617032B4100F320AF /* RequestOperation.m */; };
+		1531794A17032B4800F320AF /* ConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531794917032B4800F320AF /* ConcurrentOperation.m */; };
+		1558E5341702E9DE00AFCD92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1558E5331702E9DE00AFCD92 /* Foundation.framework */; };
+		1558E5391702E9DE00AFCD92 /* libFIOApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1558E5381702E9DE00AFCD92 /* libFIOApi.h */; };
+		1558E53B1702E9DE00AFCD92 /* libFIOApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558E53A1702E9DE00AFCD92 /* libFIOApi.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1558E52E1702E9DE00AFCD92 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				1558E5391702E9DE00AFCD92 /* libFIOApi.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		15103F971702EDB900232519 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		15103F981702EDB900232519 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		15103F9A1702EE0E00232519 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
+		15103F9B1702EE0E00232519 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
+		15103F9C1702EE0E00232519 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		15103F9D1702EE0E00232519 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		15103F9E1702EE0E00232519 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
+		15103F9F1702EE0E00232519 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
+		15103FA01702EE0E00232519 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		15103FA11702EE0E00232519 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		15103FA21702EE0E00232519 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		15103FA31702EE0E00232519 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		15103FA41702EE0E00232519 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		15103FA51702EE0E00232519 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		15103FA61702EE0E00232519 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		15103FA71702EE0E00232519 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		15103FA81702EE0E00232519 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		15103FA91702EE0E00232519 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		15103FAA1702EE0E00232519 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		15103FAB1702EE0E00232519 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "libFIOApi/dependencies/AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		15103FAC1702EE0E00232519 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "libFIOApi/dependencies/AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		15103FB61702EE7100232519 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		15103FB81702EE7900232519 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		15103FE717031FDC00232519 /* Makros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Makros.h; sourceTree = "<group>"; };
+		1531793417032AFB00F320AF /* FIOAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIOAPIClient.h; path = classes/FIOAPIClient.h; sourceTree = "<group>"; };
+		1531793517032AFB00F320AF /* FIOAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FIOAPIClient.m; path = classes/FIOAPIClient.m; sourceTree = "<group>"; };
+		1531793717032B0700F320AF /* FIORequestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIORequestBlock.h; path = classes/FIORequestBlock.h; sourceTree = "<group>"; };
+		1531793817032B0700F320AF /* FIORequestBlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIORequestBlockOperation.h; path = classes/FIORequestBlockOperation.h; sourceTree = "<group>"; };
+		1531793917032B0700F320AF /* FIORequestBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FIORequestBlockOperation.m; path = classes/FIORequestBlockOperation.m; sourceTree = "<group>"; };
+		1531793B17032B1000F320AF /* FIORequestDelegateOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIORequestDelegateOperation.h; path = classes/FIORequestDelegateOperation.h; sourceTree = "<group>"; };
+		1531793C17032B1000F320AF /* FIORequestDelegateOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FIORequestDelegateOperation.m; path = classes/FIORequestDelegateOperation.m; sourceTree = "<group>"; };
+		1531793D17032B1000F320AF /* FIORequestOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIORequestOperationDelegate.h; path = classes/FIORequestOperationDelegate.h; sourceTree = "<group>"; };
+		1531793F17032B2B00F320AF /* FIORequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIORequestOperation.h; path = classes/FIORequestOperation.h; sourceTree = "<group>"; };
+		1531794017032B2B00F320AF /* FIORequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FIORequestOperation.m; path = classes/FIORequestOperation.m; sourceTree = "<group>"; };
+		1531794217032B3400F320AF /* FIORequestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FIORequestQueue.h; path = classes/FIORequestQueue.h; sourceTree = "<group>"; };
+		1531794317032B3400F320AF /* FIORequestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FIORequestQueue.m; path = classes/FIORequestQueue.m; sourceTree = "<group>"; };
+		1531794517032B4100F320AF /* RequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestOperation.h; path = libFIOApi/classes/RequestOperation.h; sourceTree = "<group>"; };
+		1531794617032B4100F320AF /* RequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestOperation.m; path = libFIOApi/classes/RequestOperation.m; sourceTree = "<group>"; };
+		1531794817032B4800F320AF /* ConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConcurrentOperation.h; path = libFIOApi/classes/ConcurrentOperation.h; sourceTree = "<group>"; };
+		1531794917032B4800F320AF /* ConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConcurrentOperation.m; path = libFIOApi/classes/ConcurrentOperation.m; sourceTree = "<group>"; };
+		1558E5301702E9DE00AFCD92 /* liblibFIOApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibFIOApi.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1558E5331702E9DE00AFCD92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1558E5371702E9DE00AFCD92 /* libFIOApi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libFIOApi-Prefix.pch"; sourceTree = "<group>"; };
+		1558E5381702E9DE00AFCD92 /* libFIOApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libFIOApi.h; path = libFIOApi/libFIOApi.h; sourceTree = "<group>"; };
+		1558E53A1702E9DE00AFCD92 /* libFIOApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = libFIOApi.m; path = libFIOApi/libFIOApi.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1558E52D1702E9DE00AFCD92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15103FB91702EE7900232519 /* MobileCoreServices.framework in Frameworks */,
+				15103FB71702EE7100232519 /* SystemConfiguration.framework in Frameworks */,
+				1558E5341702E9DE00AFCD92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15103FBA1702EE8B00232519 /* API Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				15103FCD1702F28600232519 /* Client */,
+				15103FBF1702EF4F00232519 /* Requests */,
+				15103FBE1702EF3A00232519 /* Queue */,
+			);
+			name = "API Implementation";
+			sourceTree = "<group>";
+		};
+		15103FBE1702EF3A00232519 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				1531794217032B3400F320AF /* FIORequestQueue.h */,
+				1531794317032B3400F320AF /* FIORequestQueue.m */,
+			);
+			name = Queue;
+			sourceTree = "<group>";
+		};
+		15103FBF1702EF4F00232519 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				15103FD71702F3F900232519 /* FIORequestOperation */,
+				15103FD81702F41F00232519 /* Block Request */,
+				15103FD91702F42A00232519 /* Delegate Request */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		15103FC41702EFA500232519 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				15103FC51702EFB300232519 /* NSOperation */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		15103FC51702EFB300232519 /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				15103FC81702F0EB00232519 /* ConcurrentOperation */,
+				15103FC91702F0F300232519 /* RequestOperation */,
+			);
+			name = NSOperation;
+			sourceTree = "<group>";
+		};
+		15103FC81702F0EB00232519 /* ConcurrentOperation */ = {
+			isa = PBXGroup;
+			children = (
+				1531794817032B4800F320AF /* ConcurrentOperation.h */,
+				1531794917032B4800F320AF /* ConcurrentOperation.m */,
+			);
+			name = ConcurrentOperation;
+			sourceTree = "<group>";
+		};
+		15103FC91702F0F300232519 /* RequestOperation */ = {
+			isa = PBXGroup;
+			children = (
+				1531794517032B4100F320AF /* RequestOperation.h */,
+				1531794617032B4100F320AF /* RequestOperation.m */,
+			);
+			name = RequestOperation;
+			sourceTree = "<group>";
+		};
+		15103FCD1702F28600232519 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				1531793417032AFB00F320AF /* FIOAPIClient.h */,
+				1531793517032AFB00F320AF /* FIOAPIClient.m */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		15103FD71702F3F900232519 /* FIORequestOperation */ = {
+			isa = PBXGroup;
+			children = (
+				1531793F17032B2B00F320AF /* FIORequestOperation.h */,
+				1531794017032B2B00F320AF /* FIORequestOperation.m */,
+			);
+			name = FIORequestOperation;
+			sourceTree = "<group>";
+		};
+		15103FD81702F41F00232519 /* Block Request */ = {
+			isa = PBXGroup;
+			children = (
+				1531793717032B0700F320AF /* FIORequestBlock.h */,
+				1531793817032B0700F320AF /* FIORequestBlockOperation.h */,
+				1531793917032B0700F320AF /* FIORequestBlockOperation.m */,
+			);
+			name = "Block Request";
+			sourceTree = "<group>";
+		};
+		15103FD91702F42A00232519 /* Delegate Request */ = {
+			isa = PBXGroup;
+			children = (
+				1531793B17032B1000F320AF /* FIORequestDelegateOperation.h */,
+				1531793C17032B1000F320AF /* FIORequestDelegateOperation.m */,
+				1531793D17032B1000F320AF /* FIORequestOperationDelegate.h */,
+			);
+			name = "Delegate Request";
+			sourceTree = "<group>";
+		};
+		1558E5271702E9DE00AFCD92 = {
+			isa = PBXGroup;
+			children = (
+				1558E5381702E9DE00AFCD92 /* libFIOApi.h */,
+				1558E53A1702E9DE00AFCD92 /* libFIOApi.m */,
+				1558E5351702E9DE00AFCD92 /* Classes */,
+				15103FC41702EFA500232519 /* Helper */,
+				1558E5411702E9F900AFCD92 /* Dependencies */,
+				1558E5361702E9DE00AFCD92 /* Supporting Files */,
+				1558E5321702E9DE00AFCD92 /* Frameworks */,
+				1558E5311702E9DE00AFCD92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1558E5311702E9DE00AFCD92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1558E5301702E9DE00AFCD92 /* liblibFIOApi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1558E5321702E9DE00AFCD92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15103FB81702EE7900232519 /* MobileCoreServices.framework */,
+				15103FB61702EE7100232519 /* SystemConfiguration.framework */,
+				1558E5331702E9DE00AFCD92 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1558E5351702E9DE00AFCD92 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				15103F971702EDB900232519 /* Constants.h */,
+				15103F981702EDB900232519 /* Constants.m */,
+				15103FE717031FDC00232519 /* Makros.h */,
+				15103FBA1702EE8B00232519 /* API Implementation */,
+			);
+			name = Classes;
+			path = libFIOApi;
+			sourceTree = "<group>";
+		};
+		1558E5361702E9DE00AFCD92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1558E5371702E9DE00AFCD92 /* libFIOApi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = libFIOApi;
+			sourceTree = "<group>";
+		};
+		1558E5411702E9F900AFCD92 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				1558E5421702EA0100AFCD92 /* AFNetworking */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		1558E5421702EA0100AFCD92 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				15103F9A1702EE0E00232519 /* AFHTTPClient.h */,
+				15103F9B1702EE0E00232519 /* AFHTTPClient.m */,
+				15103F9C1702EE0E00232519 /* AFHTTPRequestOperation.h */,
+				15103F9D1702EE0E00232519 /* AFHTTPRequestOperation.m */,
+				15103F9E1702EE0E00232519 /* AFImageRequestOperation.h */,
+				15103F9F1702EE0E00232519 /* AFImageRequestOperation.m */,
+				15103FA01702EE0E00232519 /* AFJSONRequestOperation.h */,
+				15103FA11702EE0E00232519 /* AFJSONRequestOperation.m */,
+				15103FA21702EE0E00232519 /* AFNetworkActivityIndicatorManager.h */,
+				15103FA31702EE0E00232519 /* AFNetworkActivityIndicatorManager.m */,
+				15103FA41702EE0E00232519 /* AFNetworking.h */,
+				15103FA51702EE0E00232519 /* AFPropertyListRequestOperation.h */,
+				15103FA61702EE0E00232519 /* AFPropertyListRequestOperation.m */,
+				15103FA71702EE0E00232519 /* AFURLConnectionOperation.h */,
+				15103FA81702EE0E00232519 /* AFURLConnectionOperation.m */,
+				15103FA91702EE0E00232519 /* AFXMLRequestOperation.h */,
+				15103FAA1702EE0E00232519 /* AFXMLRequestOperation.m */,
+				15103FAB1702EE0E00232519 /* UIImageView+AFNetworking.h */,
+				15103FAC1702EE0E00232519 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1558E52F1702E9DE00AFCD92 /* libFIOApi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1558E53E1702E9DE00AFCD92 /* Build configuration list for PBXNativeTarget "libFIOApi" */;
+			buildPhases = (
+				1558E52C1702E9DE00AFCD92 /* Sources */,
+				1558E52D1702E9DE00AFCD92 /* Frameworks */,
+				1558E52E1702E9DE00AFCD92 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libFIOApi;
+			productName = libFIOApi;
+			productReference = 1558E5301702E9DE00AFCD92 /* liblibFIOApi.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1558E5281702E9DE00AFCD92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Carl Jahn (carl.jahn@nidag.com), NIDAG GmbH";
+			};
+			buildConfigurationList = 1558E52B1702E9DE00AFCD92 /* Build configuration list for PBXProject "libFIOApi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1558E5271702E9DE00AFCD92;
+			productRefGroup = 1558E5311702E9DE00AFCD92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1558E52F1702E9DE00AFCD92 /* libFIOApi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1558E52C1702E9DE00AFCD92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1558E53B1702E9DE00AFCD92 /* libFIOApi.m in Sources */,
+				15103F991702EDB900232519 /* Constants.m in Sources */,
+				15103FAD1702EE0E00232519 /* AFHTTPClient.m in Sources */,
+				15103FAE1702EE0E00232519 /* AFHTTPRequestOperation.m in Sources */,
+				15103FAF1702EE0E00232519 /* AFImageRequestOperation.m in Sources */,
+				15103FB01702EE0E00232519 /* AFJSONRequestOperation.m in Sources */,
+				15103FB11702EE0E00232519 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				15103FB21702EE0E00232519 /* AFPropertyListRequestOperation.m in Sources */,
+				15103FB31702EE0E00232519 /* AFURLConnectionOperation.m in Sources */,
+				15103FB41702EE0E00232519 /* AFXMLRequestOperation.m in Sources */,
+				15103FB51702EE0E00232519 /* UIImageView+AFNetworking.m in Sources */,
+				1531793617032AFB00F320AF /* FIOAPIClient.m in Sources */,
+				1531793A17032B0700F320AF /* FIORequestBlockOperation.m in Sources */,
+				1531793E17032B1000F320AF /* FIORequestDelegateOperation.m in Sources */,
+				1531794117032B2B00F320AF /* FIORequestOperation.m in Sources */,
+				1531794417032B3400F320AF /* FIORequestQueue.m in Sources */,
+				1531794717032B4100F320AF /* RequestOperation.m in Sources */,
+				1531794A17032B4800F320AF /* ConcurrentOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1558E53C1702E9DE00AFCD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1558E53D1702E9DE00AFCD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1558E53F1702E9DE00AFCD92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libFIOApi.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libFIOApi/libFIOApi-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1558E5401702E9DE00AFCD92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/libFIOApi.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libFIOApi/libFIOApi-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1558E52B1702E9DE00AFCD92 /* Build configuration list for PBXProject "libFIOApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1558E53C1702E9DE00AFCD92 /* Debug */,
+				1558E53D1702E9DE00AFCD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1558E53E1702E9DE00AFCD92 /* Build configuration list for PBXNativeTarget "libFIOApi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1558E53F1702E9DE00AFCD92 /* Debug */,
+				1558E5401702E9DE00AFCD92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1558E5281702E9DE00AFCD92 /* Project object */;
+}

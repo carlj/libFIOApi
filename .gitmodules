@@ -1,0 +1,3 @@
+[submodule "libFIOApi/libFIOApi/dependencies/AFNetworking"]
+	path = libFIOApi/libFIOApi/dependencies/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
