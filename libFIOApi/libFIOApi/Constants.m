@@ -10,5 +10,3 @@
 
 
 NSString *const kFIOApiEndPoint = @"https://api.forecast.io/forecast/";
-
-NSString *const kFIOApiDebugKey = @"3edb9d81b1eee3c01f1eeb5cf918ed43";

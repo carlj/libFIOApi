@@ -10,6 +10,3 @@
 
 //String to the current Api End Point URL
 extern NSString *const kFIOApiEndPoint;
-
-//Api Key for the Debug process
-extern NSString *const kFIOApiDebugKey;
