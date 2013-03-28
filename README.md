@@ -1,6 +1,6 @@
 # libFIO
 
-libFIO is a simple utility class for the [forecast.io API](https://developer.darkskyapp.com) . Features:
+libFIO is a simple utility library for the [forecast.io v2 API](https://developer.darkskyapp.com). Features:
 
 * Queueing
 * Block Request
@@ -8,12 +8,14 @@ libFIO is a simple utility class for the [forecast.io API](https://developer.dar
 
 ## Adding to your project
 
-1. Add the ```libFIOApi.xcodeproj``` to your XCode Project
-2. Add the ```libFIOApi.a``` to your Targets Build Phrases -> Target Dependencies
-3. In your Target Build Settings set the ```Header Search Paths``` to the ```libFIOApi``` folder. (e.g $(SRCROOT)/dependencies/libFIOApi/ with the recursiv option)
+1. ```git clone https://github.com/carlj/libFIOApi.git```
+2. ```cd libFIOApi``` and ```git submodule init```
+3. Add the ```libFIOApi.xcodeproj``` to your XCode Project
+4. Add the ```libFIOApi.a``` to your Targets Build Phrases -> Target Dependencies
+5. In your Target Build Settings set the ```Header Search Paths``` to the ```libFIOApi``` folder. (e.g $(SRCROOT)/dependencies/libFIOApi/ with the recursiv option)
 
 
-You don't need to do anything regarding ARC
+You don't need to do anything regarding to ARC.
 
 ## Usage
 
@@ -33,8 +35,14 @@ delegateOperation.latitude = @49.9999976071047;
 [delegateOperation start];
 
 
+//the finished method from the FIORequestOperationDelegate protocol is required
 - (void)operation:(FIORequestDelegateOperation *)operation finishedWithResults:(NSDictionary *)results {
   NSLog(@"%s %@", __FUNCTION__, results);
+}
+
+//the error method from the FIORequestOperationDelegate protocol is optional
+- (void)operation:(FIORequestDelegateOperation *)operation failedWithError:(NSError *)error {
+    NSLog(@"%s %@", __FUNCTION__, error);
 }
 ```
 
