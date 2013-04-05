@@ -9,10 +9,11 @@ libFIO is a simple utility library for the [forecast.io v2 API](https://develope
 ## Adding to your project
 
 1. ```git clone https://github.com/carlj/libFIOApi.git```
-2. ```cd libFIOApi``` and ```git submodule init```
-3. Add the ```libFIOApi.xcodeproj``` to your XCode Project
-4. Add the ```libFIOApi.a``` to your Targets Build Phrases -> Target Dependencies
-5. In your Target Build Settings set the ```Header Search Paths``` to the ```libFIOApi``` folder. (e.g $(SRCROOT)/dependencies/libFIOApi/ with the recursiv option)
+2. ```cd libFIOApi```, ```git submodule init``` and ```git submodule update```
+3. Drag and Drop the ```libFIOApi.xcodeproj``` to your XCode Project
+4. Add the ```libFIOApi.a``` to your Targets -> Build Phrases -> Target Dependencies
+5. In you Target -> Summary add the ```libFIOApi.a``` to the Linked Frameworks and Libraries 
+6. In your Target Build Settings set the ```Header Search Paths``` to the ```libFIOApi``` folder. (e.g $(SRCROOT)/dependencies/libFIOApi/ with the recursiv option)
 
 
 You don't need to do anything regarding to ARC.
