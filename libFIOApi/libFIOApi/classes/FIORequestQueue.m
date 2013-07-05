@@ -20,7 +20,7 @@ NSString *const kFIORequestQueueCanceledNotificatioName = @"kFIORequestQueueCanc
   self = [super init];
   
   if (self) {
-    self.maxConcurrentOperationCount = kFIORequestMAXCurrentOperationsCount;
+    self.maxConcurrentOperationCount = NSOperationQueueDefaultMaxConcurrentOperationCount;
   }
 
   return self;

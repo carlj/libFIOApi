@@ -12,8 +12,6 @@ extern NSString *const kFIORequestQueueStartedNotificatioName;
 extern NSString *const kFIORequestQueueFinishedNotificatioName;
 extern NSString *const kFIORequestQueueCanceledNotificatioName;
 
-#define kFIORequestMAXCurrentOperationsCount 4
-
 @interface FIORequestQueue : NSOperationQueue
 
 + (id)sharedQueue;
