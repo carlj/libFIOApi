@@ -23,6 +23,17 @@
 
 }
 
++ (id)sharedAPIClient {
+
+  static FIOAPIClient *sharedClient = nil;
+  static dispatch_once_t sharedOnceToken;
+  dispatch_once(&sharedOnceToken, ^{
+    sharedClient = [self.class new];
+  });
+
+  return sharedClient;
+}
+
 - (id)forecastOperationWithDelegate:(id<FIORequestOperationDelegate>)delegate {
   NSAssert(_apiKey, @"no api key given");
   
@@ -41,6 +52,23 @@
   
   return operation;
 }
+
+- (id)requestWithLongitude:(NSNumber *)longitude latitude:(NSNumber *)latitude date:(NSDate *)date finished:(FIORequestFinishedBlock)finishedBlock failed:(FIORequestFailedBlock)failedBlock {
+  NSAssert(_apiKey, @"no api key given");
+
+  FIORequestBlockOperation *blockOperation = [self forecastOperationWithFinishedBlock: finishedBlock
+                                                                          failedBlock: failedBlock
+                                              ];
+  
+  blockOperation.longitude = latitude;
+  blockOperation.latitude = longitude;
+  blockOperation.date = date;
+  
+  [blockOperation start];
+
+  return blockOperation;
+}
+
 
 
 @end

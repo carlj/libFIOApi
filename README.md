@@ -20,11 +20,17 @@ You don't need to do anything regarding to ARC.
 
 ## Usage
 
+Bevor you get started you should get a API Key from: [forecast.io Developer Console](https://developer.forecast.io)
+
 First take a look at the ```ViewController.m``` File in the include example Project!
 
 Create the API Client with your [forecast.io](forecast.io) Key: 
 ``` objective-c
 FIOAPIClient *client = [[FIOAPIClient alloc] initWithAPIKey: @"your api key" ];
+
+//or get the shared client
+FIOAPIClient *client = [FIOAPIClient sharedAPIClient];
+client.apiKey = @"YOUR API KEY";
 ```
 
 Example 1: (API Request with the Delegate Methods)
@@ -63,7 +69,21 @@ blockOperation.latitude = @49.9999976071047;
 [blockOperation start];
 ```
 
-Example 3: (API Request for a Specific Time)
+Example 3: (API Request with block)
+``` objective-c
+//Block Example
+[client requestWithLongitude: @49.9999976071047
+                    latitude: @49.9999976071047
+                    finished: ^(FIORequestBlockOperation *operation, id response){
+                      NSLog(@"%s %@", __FUNCTION__, response);
+                    }
+                      failed: ^(FIORequestBlockOperation *operation, NSError *error){
+                        NSLog(@"%s %@", __FUNCTION__, error);
+}];
+//You should not start the request manually
+```
+
+Example 4: (API Request for a Specific Time)
 ``` objective-c
 FIORequestDelegateOperation *blockTimeOperation = [client forecastOperationWithFinishedBlock:^(FIORequestBlockOperation *operation, id response){
   NSLog(@"%s %@", __FUNCTION__, response);
@@ -78,7 +98,7 @@ blockTimeOperation.date = [NSDate date]; //automaticly convert the NSDate to GMT
 [blockTimeOperation start];
 ```
 
-Example 4: (API Request with SI Units)
+Example 5: (API Request with SI Units)
 ``` objective-c
 FIORequestDelegateOperation *blockSIOperation = [client forecastOperationWithFinishedBlock:^(FIORequestBlockOperation *operation, id response){
   NSLog(@"%s %@", __FUNCTION__, response);
@@ -93,7 +113,7 @@ blockSIOperation.useSIUnits = YES;
 [blockSIOperation start];
 ```
 
-Example 5: (API Request with a Queue)
+Example 6: (API Request with a Queue)
 ``` objective-c
 FIORequestDelegateOperation *delegateOperationForQueue = [client forecastOperationWithDelegate:self];
 delegateOperationForQueue.longitude = @49.9999976071047;

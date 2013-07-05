@@ -21,7 +21,8 @@
   [super viewDidLoad];
   
   NSLog(@"%s", __FUNCTION__);
-  FIOAPIClient *client = [[FIOAPIClient alloc] initWithAPIKey: @"3edb9d81b1eee3c01f1eeb5cf918ed43" ];
+  FIOAPIClient *client = [FIOAPIClient sharedAPIClient];
+  client.apiKey = @"YOUR API KEY";
   
   //Delegate Example
   FIORequestDelegateOperation *delegateOperation = [client forecastOperationWithDelegate:self];
@@ -30,8 +31,8 @@
   
   //[delegateOperation start];
   
-  //Block Example
-  FIORequestDelegateOperation *blockOperation = [client forecastOperationWithFinishedBlock:^(FIORequestBlockOperation *operation, id response){
+  //Block Example 1
+  FIORequestBlockOperation *blockOperation = [client forecastOperationWithFinishedBlock:^(FIORequestBlockOperation *operation, id response){
     NSLog(@"%s %@", __FUNCTION__, response);
   }
                                                                                failedBlock:^(FIORequestBlockOperation *operation, NSError *error){
@@ -44,7 +45,16 @@
   //[blockOperation start];
   
   
-  
+  //Block Example 2
+  [client requestWithLongitude: @49.9999976071047
+                      latitude: @49.9999976071047
+                          date: [NSDate date]
+                      finished: ^(FIORequestBlockOperation *operation, id response){
+                        NSLog(@"%s %@", __FUNCTION__, response);
+                      }
+                        failed: ^(FIORequestBlockOperation *operation, NSError *error){
+                          NSLog(@"%s %@", __FUNCTION__, error);
+                        }];
   
   //Queue Example
   
@@ -56,7 +66,7 @@
   
   
   //Block Example for specific Time
-  FIORequestDelegateOperation *blockTimeOperation = [client forecastOperationWithFinishedBlock:^(FIORequestBlockOperation *operation, id response){
+  FIORequestBlockOperation *blockTimeOperation = [client forecastOperationWithFinishedBlock:^(FIORequestBlockOperation *operation, id response){
     NSLog(@"%s %@", __FUNCTION__, response);
   }
                                                                                failedBlock:^(FIORequestBlockOperation *operation, NSError *error){
@@ -69,7 +79,7 @@
   //[blockTimeOperation start];
   
   //Block Example with SI Units
-  FIORequestDelegateOperation *blockSIOperation = [client forecastOperationWithFinishedBlock:^(FIORequestBlockOperation *operation, id response){
+  FIORequestBlockOperation *blockSIOperation = [client forecastOperationWithFinishedBlock:^(FIORequestBlockOperation *operation, id response){
     NSLog(@"%s %@", __FUNCTION__, response);
   }
                                                                                    failedBlock:^(FIORequestBlockOperation *operation, NSError *error){
@@ -79,7 +89,7 @@
   blockSIOperation.longitude = @49.9999976071047;
   blockSIOperation.latitude = @49.9999976071047;
   blockSIOperation.useSIUnits = YES;
-  [blockSIOperation start];
+  //[blockSIOperation start];
 }
 
 - (void)operation:(FIORequestDelegateOperation *)operation finishedWithResults:(NSDictionary *)results {
