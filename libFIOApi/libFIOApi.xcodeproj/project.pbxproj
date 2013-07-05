@@ -45,8 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		15103F971702EDB900232519 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		15103F981702EDB900232519 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		15103F971702EDB900232519 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Constants.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		15103F981702EDB900232519 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Constants.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		15103F9A1702EE0E00232519 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
 		15103F9B1702EE0E00232519 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
 		15103F9C1702EE0E00232519 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 		1531794317032B3400F320AF /* FIORequestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FIORequestQueue.m; path = classes/FIORequestQueue.m; sourceTree = "<group>"; };
 		1531794517032B4100F320AF /* RequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestOperation.h; path = libFIOApi/classes/RequestOperation.h; sourceTree = "<group>"; };
 		1531794617032B4100F320AF /* RequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestOperation.m; path = libFIOApi/classes/RequestOperation.m; sourceTree = "<group>"; };
-		1531794817032B4800F320AF /* ConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConcurrentOperation.h; path = libFIOApi/classes/ConcurrentOperation.h; sourceTree = "<group>"; };
-		1531794917032B4800F320AF /* ConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConcurrentOperation.m; path = libFIOApi/classes/ConcurrentOperation.m; sourceTree = "<group>"; };
+		1531794817032B4800F320AF /* ConcurrentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = ConcurrentOperation.h; path = libFIOApi/classes/ConcurrentOperation.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		1531794917032B4800F320AF /* ConcurrentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = ConcurrentOperation.m; path = libFIOApi/classes/ConcurrentOperation.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		1558E5301702E9DE00AFCD92 /* liblibFIOApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibFIOApi.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1558E5331702E9DE00AFCD92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1558E5371702E9DE00AFCD92 /* libFIOApi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libFIOApi-Prefix.pch"; sourceTree = "<group>"; };
