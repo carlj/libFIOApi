@@ -17,6 +17,7 @@
 
     _finished = NO;
     _executing = NO;
+    _cancelled = NO;
   }
   
   return self;
