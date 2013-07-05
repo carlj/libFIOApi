@@ -42,7 +42,7 @@ NSString *const kFIORequestQueueCanceledNotificatioName = @"kFIORequestQueueCanc
 
 - (void)performNotificationOnMainThread:(NSString *)notificationName {
 
-  __weak FIORequestQueue *blockQueue = self;
+  __block FIORequestQueue *blockQueue = self;
   __weak NSString *blockNotificationName = notificationName;
   PerformTaskOnMainThreadWithBlock (^{
     [[NSNotificationCenter defaultCenter] postNotificationName: blockNotificationName object: blockQueue];
@@ -50,9 +50,7 @@ NSString *const kFIORequestQueueCanceledNotificatioName = @"kFIORequestQueueCanc
 }
 
 - (void)queueStarted {
-  if (!self.operationCount) {
-    [self performNotificationOnMainThread: kFIORequestQueueFinishedNotificatioName];
-  }
+  [self performNotificationOnMainThread: kFIORequestQueueFinishedNotificatioName];
 }
 
 - (void)queuFinished {
