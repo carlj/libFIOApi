@@ -26,7 +26,7 @@
 #pragma mark Lifecylce Methods
 - (void)start {
   
-  __weak ConcurrentOperation *blockOperation = self;
+  __block ConcurrentOperation *blockOperation = self;
   PerformTaskOnMainThreadWithBlock(^{
     
     [blockOperation willChangeValueForKey:@"isExecuting"];
@@ -38,13 +38,26 @@
 }
 
 - (void)cancel {
-  
   [super cancel];
+  
+  __block ConcurrentOperation *blockSelf = self;
+  PerformTaskOnMainThreadWithBlock(^{
+
+    [blockSelf willChangeValueForKey:@"isExecuting"];
+    [blockSelf willChangeValueForKey:@"isCancelled"];
+  
+    blockSelf.executing = NO;
+    blockSelf.cancelled = YES;
+  
+    [blockSelf didChangeValueForKey:@"isExecuting"];
+    [blockSelf didChangeValueForKey:@"isCancelled"];
+    
+  });
 }
 
 - (void)finish {
   
-  __weak ConcurrentOperation *blockSelf = self;
+  __block ConcurrentOperation *blockSelf = self;
   PerformTaskOnMainThreadWithBlock(^{
     
     [blockSelf willChangeValueForKey:@"isExecuting"];
