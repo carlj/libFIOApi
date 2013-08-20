@@ -126,8 +126,12 @@ delegateOperationForQueue.latitude = @49.9999976071047;
 
 ## License
 
-libFIO is licensed under the MIT license See the LICENSE file for more info.
+libFIO is licensed under the MIT license. See the LICENSE file for more info.
 
 ## Thanks
 
 Thanks to [@samsoffes](https://twitter.com/samsoffes) for the inspirations!
+
+##ToDo
+Rearrange project structur
+
