@@ -11,13 +11,12 @@
 		15251F361702EA880015769A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15251F351702EA880015769A /* UIKit.framework */; };
 		15251F381702EA880015769A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15251F371702EA880015769A /* Foundation.framework */; };
 		15251F3A1702EA880015769A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15251F391702EA880015769A /* CoreGraphics.framework */; };
-		15251F401702EA880015769A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15251F3E1702EA880015769A /* InfoPlist.strings */; };
-		15251F421702EA880015769A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15251F411702EA880015769A /* main.m */; };
-		15251F461702EA880015769A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15251F451702EA880015769A /* AppDelegate.m */; };
 		15251F481702EA880015769A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 15251F471702EA880015769A /* Default.png */; };
 		15251F4A1702EA880015769A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15251F491702EA880015769A /* Default@2x.png */; };
 		15251F4C1702EA880015769A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15251F4B1702EA880015769A /* Default-568h@2x.png */; };
-		15251F4F1702EA880015769A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15251F4E1702EA880015769A /* ViewController.m */; };
+		FA990C1D17E7399000D286B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA990C1A17E7399000D286B1 /* AppDelegate.m */; };
+		FA990C1E17E7399000D286B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA990C1C17E7399000D286B1 /* ViewController.m */; };
+		FA990C2017E739A400D286B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA990C1F17E739A400D286B1 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,17 +42,16 @@
 		15251F351702EA880015769A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		15251F371702EA880015769A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		15251F391702EA880015769A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		15251F3D1702EA880015769A /* FIOExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FIOExample-Info.plist"; sourceTree = "<group>"; };
-		15251F3F1702EA880015769A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		15251F411702EA880015769A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		15251F431702EA880015769A /* FIOExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FIOExample-Prefix.pch"; sourceTree = "<group>"; };
-		15251F441702EA880015769A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		15251F451702EA880015769A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		15251F471702EA880015769A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = FIOExample/Default.png; sourceTree = "<group>"; };
-		15251F491702EA880015769A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "FIOExample/Default@2x.png"; sourceTree = "<group>"; };
-		15251F4B1702EA880015769A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "FIOExample/Default-568h@2x.png"; sourceTree = "<group>"; };
-		15251F4D1702EA880015769A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		15251F4E1702EA880015769A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		15251F3D1702EA880015769A /* FIOExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "FIOExample-Info.plist"; path = "Other Sources/FIOExample-Info.plist"; sourceTree = "<group>"; };
+		15251F431702EA880015769A /* FIOExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FIOExample-Prefix.pch"; path = "Other Sources/FIOExample-Prefix.pch"; sourceTree = "<group>"; };
+		15251F471702EA880015769A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Ressources/Default.png; sourceTree = "<group>"; };
+		15251F491702EA880015769A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Ressources/Default@2x.png"; sourceTree = "<group>"; };
+		15251F4B1702EA880015769A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Ressources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA990C1917E7399000D286B1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		FA990C1A17E7399000D286B1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		FA990C1B17E7399000D286B1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/ViewController.h; sourceTree = SOURCE_ROOT; };
+		FA990C1C17E7399000D286B1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/ViewController.m; sourceTree = SOURCE_ROOT; };
+		FA990C1F17E739A400D286B1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Other Sources/main.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +69,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15103F8B1702EBF000232519 /* Dependencies */ = {
+		15103F8B1702EBF000232519 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
 				15103F8C1702EBF900232519 /* libFIOApi.xcodeproj */,
 			);
-			name = Dependencies;
+			name = Vendors;
 			sourceTree = "<group>";
 		};
 		15103F8D1702EBF900232519 /* Products */ = {
@@ -97,20 +95,11 @@
 			name = Ressources;
 			sourceTree = "<group>";
 		};
-		15103F961702ECC100232519 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				15251F4D1702EA880015769A /* ViewController.h */,
-				15251F4E1702EA880015769A /* ViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
 		15251F291702EA880015769A = {
 			isa = PBXGroup;
 			children = (
-				15251F3B1702EA880015769A /* FIOExample */,
-				15103F8B1702EBF000232519 /* Dependencies */,
+				15251F3B1702EA880015769A /* Classes */,
+				15103F8B1702EBF000232519 /* Vendors */,
 				15251F3C1702EA880015769A /* Supporting Files */,
 				15103F951702ECB500232519 /* Ressources */,
 				15251F341702EA880015769A /* Frameworks */,
@@ -136,22 +125,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		15251F3B1702EA880015769A /* FIOExample */ = {
+		15251F3B1702EA880015769A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				15103F961702ECC100232519 /* Controller */,
-				15251F441702EA880015769A /* AppDelegate.h */,
-				15251F451702EA880015769A /* AppDelegate.m */,
+				FA990C1917E7399000D286B1 /* AppDelegate.h */,
+				FA990C1A17E7399000D286B1 /* AppDelegate.m */,
+				FA990C1B17E7399000D286B1 /* ViewController.h */,
+				FA990C1C17E7399000D286B1 /* ViewController.m */,
 			);
+			name = Classes;
 			path = FIOExample;
 			sourceTree = "<group>";
 		};
 		15251F3C1702EA880015769A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA990C1F17E739A400D286B1 /* main.m */,
 				15251F3D1702EA880015769A /* FIOExample-Info.plist */,
-				15251F3E1702EA880015769A /* InfoPlist.strings */,
-				15251F411702EA880015769A /* main.m */,
 				15251F431702EA880015769A /* FIOExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -226,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15251F401702EA880015769A /* InfoPlist.strings in Resources */,
 				15251F481702EA880015769A /* Default.png in Resources */,
 				15251F4A1702EA880015769A /* Default@2x.png in Resources */,
 				15251F4C1702EA880015769A /* Default-568h@2x.png in Resources */,
@@ -240,9 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15251F421702EA880015769A /* main.m in Sources */,
-				15251F461702EA880015769A /* AppDelegate.m in Sources */,
-				15251F4F1702EA880015769A /* ViewController.m in Sources */,
+				FA990C1D17E7399000D286B1 /* AppDelegate.m in Sources */,
+				FA990C1E17E7399000D286B1 /* ViewController.m in Sources */,
+				FA990C2017E739A400D286B1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,17 +244,6 @@
 			targetProxy = 15103F921702EC0300232519 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		15251F3E1702EA880015769A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				15251F3F1702EA880015769A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		15251F531702EA880015769A /* Debug */ = {
@@ -330,9 +308,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FIOExample/FIOExample-Prefix.pch";
+				GCC_PREFIX_HEADER = "Other Sources/FIOExample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../libFIOApi/libFIOApi/**";
-				INFOPLIST_FILE = "FIOExample/FIOExample-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Other Sources/FIOExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -342,9 +320,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FIOExample/FIOExample-Prefix.pch";
+				GCC_PREFIX_HEADER = "Other Sources/FIOExample-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../libFIOApi/libFIOApi/**";
-				INFOPLIST_FILE = "FIOExample/FIOExample-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Other Sources/FIOExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -20,14 +20,16 @@
 {
   [super viewDidLoad];
   
+  self.view.backgroundColor = [UIColor whiteColor];
+  
   NSLog(@"%s", __FUNCTION__);
   FIOAPIClient *client = [FIOAPIClient sharedAPIClient];
   client.apiKey = @"YOUR API KEY";
   
   //Delegate Example
   FIORequestDelegateOperation *delegateOperation = [client forecastOperationWithDelegate:self];
-  delegateOperation.longitude = @49.9999976071047;
-  delegateOperation.latitude = @49.9999976071047;
+  delegateOperation.longitude = @8.2643742;
+  delegateOperation.latitude = @50.0146848;
   
   //[delegateOperation start];
   
@@ -39,15 +41,15 @@
                                                                                  NSLog(@"%s %@", __FUNCTION__, error);
                                                                                }];
   
-  blockOperation.longitude = @49.9999976071047;
-  blockOperation.latitude = @49.9999976071047;
-  
+  blockOperation.longitude = @8.2643742;
+  blockOperation.latitude = @50.0146848;
+
   //[blockOperation start];
   
   
   //Block Example 2
-  [client requestWithLongitude: @49.9999976071047
-                      latitude: @49.9999976071047
+  [client requestWithLongitude: @8.2643742
+                      latitude: @50.0146848
                           date: [NSDate date]
                       finished: ^(FIORequestBlockOperation *operation, id response){
                         NSLog(@"%s %@", __FUNCTION__, response);
@@ -57,10 +59,10 @@
                         }];
   
   //Queue Example
-  
+
   FIORequestDelegateOperation *delegateOperationForQueue = [client forecastOperationWithDelegate:self];
-  delegateOperationForQueue.longitude = @49.9999976071047;
-  delegateOperationForQueue.latitude = @49.9999976071047;
+  delegateOperationForQueue.longitude = @8.2643742;
+  delegateOperationForQueue.latitude = @50.0146848;
   
   //[[FIORequestQueue sharedQueue] addOperation: delegateOperationForQueue];
   
@@ -73,8 +75,8 @@
                                                                                  NSLog(@"%s %@", __FUNCTION__, error);
                                                                                }];
   
-  blockTimeOperation.longitude = @49.9999976071047;
-  blockTimeOperation.latitude = @49.9999976071047;
+  blockTimeOperation.longitude = @8.2643742;
+  blockTimeOperation.latitude = @50.0146848;
   blockTimeOperation.date = [NSDate date]; //automaticly convert the NSDate to GMT
   //[blockTimeOperation start];
   
@@ -86,8 +88,8 @@
                                                                                      NSLog(@"%s %@", __FUNCTION__, error);
                                                                                    }];
   
-  blockSIOperation.longitude = @49.9999976071047;
-  blockSIOperation.latitude = @49.9999976071047;
+  blockSIOperation.longitude = @8.2643742;
+  blockSIOperation.latitude = @50.0146848;
   blockSIOperation.useSIUnits = YES;
   //[blockSIOperation start];
 }
