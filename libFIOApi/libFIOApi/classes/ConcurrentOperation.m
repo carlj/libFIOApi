@@ -9,6 +9,9 @@
 #import "ConcurrentOperation.h"
 
 @implementation ConcurrentOperation
+@synthesize finished = _finished;
+@synthesize executing = _executing;
+
 
 - (id)init {
   self = [super init];
@@ -17,7 +20,6 @@
 
     _finished = NO;
     _executing = NO;
-    _cancelled = NO;
   }
   
   return self;
@@ -27,12 +29,16 @@
 #pragma mark Lifecylce Methods
 - (void)start {
   
-  __block ConcurrentOperation *blockOperation = self;
+    if (self.isCancelled) {
+        [self finish];
+        return;
+    }
+    
   PerformTaskOnMainThreadWithBlock(^{
     
-    [blockOperation willChangeValueForKey:@"isExecuting"];
-    blockOperation.executing = YES;
-    [blockOperation didChangeValueForKey:@"isExecuting"];
+    [self willChangeValueForKey:@"isExecuting"];
+    _executing = YES;
+    [self didChangeValueForKey:@"isExecuting"];
 
   });
   
@@ -41,34 +47,29 @@
 - (void)cancel {
   [super cancel];
   
-  __block ConcurrentOperation *blockSelf = self;
   PerformTaskOnMainThreadWithBlock(^{
 
-    [blockSelf willChangeValueForKey:@"isExecuting"];
-    [blockSelf willChangeValueForKey:@"isCancelled"];
+    [self willChangeValueForKey:@"isExecuting"];
   
-    blockSelf.executing = NO;
-    blockSelf.cancelled = YES;
+    _executing = NO;
   
-    [blockSelf didChangeValueForKey:@"isExecuting"];
-    [blockSelf didChangeValueForKey:@"isCancelled"];
+    [self didChangeValueForKey:@"isExecuting"];
     
   });
 }
 
 - (void)finish {
   
-  __block ConcurrentOperation *blockSelf = self;
   PerformTaskOnMainThreadWithBlock(^{
     
-    [blockSelf willChangeValueForKey:@"isExecuting"];
-    [blockSelf willChangeValueForKey:@"isFinished"];
+    [self willChangeValueForKey:@"isExecuting"];
+    [self willChangeValueForKey:@"isFinished"];
     
-    blockSelf.executing = NO;
-    blockSelf.finished = YES;
+    _executing = NO;
+    _finished = YES;
     
-    [blockSelf didChangeValueForKey:@"isExecuting"];
-    [blockSelf didChangeValueForKey:@"isFinished"];
+    [self didChangeValueForKey:@"isExecuting"];
+    [self didChangeValueForKey:@"isFinished"];
     
   });
   

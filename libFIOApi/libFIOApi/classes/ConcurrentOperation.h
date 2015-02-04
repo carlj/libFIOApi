@@ -10,9 +10,5 @@
 
 @interface ConcurrentOperation : NSOperation
 
-@property (nonatomic, assign, getter = isExecuting) BOOL executing;
-@property (nonatomic, assign, getter = isFinished) BOOL finished;
-@property (nonatomic, assign, getter = isCancelled) BOOL cancelled;
-
 - (void)finish;
 @end
