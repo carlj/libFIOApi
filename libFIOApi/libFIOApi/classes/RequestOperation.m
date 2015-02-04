@@ -31,25 +31,29 @@
 
 #pragma mark -
 #pragma mark HTTP Methods
-- (AFJSONRequestOperation *)httpRequest {
-  
-  if (!_httpRequest) {
+- (AFHTTPRequestOperation *)httpRequest {
     
-    __block RequestOperation *blockSelf = self;
-    _httpRequest = [AFJSONRequestOperation JSONRequestOperationWithRequest: self.request
-                                                                   success: ^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
-                                                                     [blockSelf requestFinishedWithJSON: JSON];
-                                                                   }
-                                                                   failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
-                                                                     [blockSelf requestFailedWithError: error];
-                                                                   }
-                    ];
+    if (!_httpRequest) {
+        
+        __block RequestOperation *blockSelf = self;
+        _httpRequest = [[AFHTTPRequestOperation alloc] initWithRequest:self.request];
+        _httpRequest.responseSerializer = [AFJSONResponseSerializer new];
+        [_httpRequest setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+            [blockSelf requestFinishedWithJSON: operation.responseObject];
+            
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            [blockSelf requestFailedWithError: error];
+            
+        }];
+        
+        
+    }
     
-  }
-  return _httpRequest;
+    return _httpRequest;
 }
 
-- (void)requestFinishedWithJSON:(id)JSON {
+- (void)requestFinishedWithJSON:(id)object {
+    
   [self finish];
 }
 
@@ -68,7 +72,6 @@
 #pragma mark -
 #pragma mark Lifecylce Methods
 - (void)start {
-  
   [super start];
   
   __block RequestOperation * blockSelf = self;

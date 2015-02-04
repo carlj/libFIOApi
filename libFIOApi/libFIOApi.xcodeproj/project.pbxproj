@@ -8,15 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		15103F991702EDB900232519 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103F981702EDB900232519 /* Constants.m */; };
-		15103FAD1702EE0E00232519 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103F9B1702EE0E00232519 /* AFHTTPClient.m */; };
-		15103FAE1702EE0E00232519 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103F9D1702EE0E00232519 /* AFHTTPRequestOperation.m */; };
-		15103FAF1702EE0E00232519 /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103F9F1702EE0E00232519 /* AFImageRequestOperation.m */; };
-		15103FB01702EE0E00232519 /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FA11702EE0E00232519 /* AFJSONRequestOperation.m */; };
-		15103FB11702EE0E00232519 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FA31702EE0E00232519 /* AFNetworkActivityIndicatorManager.m */; };
-		15103FB21702EE0E00232519 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FA61702EE0E00232519 /* AFPropertyListRequestOperation.m */; };
-		15103FB31702EE0E00232519 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FA81702EE0E00232519 /* AFURLConnectionOperation.m */; };
-		15103FB41702EE0E00232519 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FAA1702EE0E00232519 /* AFXMLRequestOperation.m */; };
-		15103FB51702EE0E00232519 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 15103FAC1702EE0E00232519 /* UIImageView+AFNetworking.m */; };
 		15103FB71702EE7100232519 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15103FB61702EE7100232519 /* SystemConfiguration.framework */; };
 		15103FB91702EE7900232519 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15103FB81702EE7900232519 /* MobileCoreServices.framework */; };
 		1531793617032AFB00F320AF /* FIOAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531793517032AFB00F320AF /* FIOAPIClient.m */; };
@@ -29,6 +20,15 @@
 		1558E5341702E9DE00AFCD92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1558E5331702E9DE00AFCD92 /* Foundation.framework */; };
 		1558E5391702E9DE00AFCD92 /* libFIOApi.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1558E5381702E9DE00AFCD92 /* libFIOApi.h */; };
 		1558E53B1702E9DE00AFCD92 /* libFIOApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558E53A1702E9DE00AFCD92 /* libFIOApi.m */; };
+		FA8C580D1A8258E3009C5D3B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C57FB1A8258E3009C5D3B /* AFHTTPRequestOperation.m */; };
+		FA8C580E1A8258E3009C5D3B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C57FD1A8258E3009C5D3B /* AFHTTPRequestOperationManager.m */; };
+		FA8C580F1A8258E3009C5D3B /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C57FF1A8258E3009C5D3B /* AFHTTPSessionManager.m */; };
+		FA8C58101A8258E3009C5D3B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C58021A8258E3009C5D3B /* AFNetworkReachabilityManager.m */; };
+		FA8C58111A8258E3009C5D3B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C58041A8258E3009C5D3B /* AFSecurityPolicy.m */; };
+		FA8C58121A8258E3009C5D3B /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C58061A8258E3009C5D3B /* AFURLConnectionOperation.m */; };
+		FA8C58131A8258E3009C5D3B /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C58081A8258E3009C5D3B /* AFURLRequestSerialization.m */; };
+		FA8C58141A8258E3009C5D3B /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C580A1A8258E3009C5D3B /* AFURLResponseSerialization.m */; };
+		FA8C58151A8258E3009C5D3B /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C580C1A8258E3009C5D3B /* AFURLSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,25 +47,6 @@
 /* Begin PBXFileReference section */
 		15103F971702EDB900232519 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Constants.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		15103F981702EDB900232519 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = Constants.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		15103F9A1702EE0E00232519 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPClient.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPClient.h; sourceTree = "<group>"; };
-		15103F9B1702EE0E00232519 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPClient.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPClient.m; sourceTree = "<group>"; };
-		15103F9C1702EE0E00232519 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		15103F9D1702EE0E00232519 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		15103F9E1702EE0E00232519 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFImageRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFImageRequestOperation.h; sourceTree = "<group>"; };
-		15103F9F1702EE0E00232519 /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFImageRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFImageRequestOperation.m; sourceTree = "<group>"; };
-		15103FA01702EE0E00232519 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFJSONRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		15103FA11702EE0E00232519 /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFJSONRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFJSONRequestOperation.m; sourceTree = "<group>"; };
-		15103FA21702EE0E00232519 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		15103FA31702EE0E00232519 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		15103FA41702EE0E00232519 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		15103FA51702EE0E00232519 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFPropertyListRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
-		15103FA61702EE0E00232519 /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFPropertyListRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
-		15103FA71702EE0E00232519 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		15103FA81702EE0E00232519 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		15103FA91702EE0E00232519 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFXMLRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFXMLRequestOperation.h; sourceTree = "<group>"; };
-		15103FAA1702EE0E00232519 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFXMLRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFXMLRequestOperation.m; sourceTree = "<group>"; };
-		15103FAB1702EE0E00232519 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "libFIOApi/dependencies/AFNetworking/AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		15103FAC1702EE0E00232519 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "libFIOApi/dependencies/AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		15103FB61702EE7100232519 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		15103FB81702EE7900232519 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		15103FE717031FDC00232519 /* Makros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Makros.h; sourceTree = "<group>"; };
@@ -90,6 +71,25 @@
 		1558E5371702E9DE00AFCD92 /* libFIOApi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libFIOApi-Prefix.pch"; sourceTree = "<group>"; };
 		1558E5381702E9DE00AFCD92 /* libFIOApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libFIOApi.h; path = libFIOApi/libFIOApi.h; sourceTree = "<group>"; };
 		1558E53A1702E9DE00AFCD92 /* libFIOApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = libFIOApi.m; path = libFIOApi/libFIOApi.m; sourceTree = "<group>"; };
+		FA8C57FA1A8258E3009C5D3B /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		FA8C57FB1A8258E3009C5D3B /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		FA8C57FC1A8258E3009C5D3B /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		FA8C57FD1A8258E3009C5D3B /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		FA8C57FE1A8258E3009C5D3B /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		FA8C57FF1A8258E3009C5D3B /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		FA8C58001A8258E3009C5D3B /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		FA8C58011A8258E3009C5D3B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		FA8C58021A8258E3009C5D3B /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		FA8C58031A8258E3009C5D3B /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		FA8C58041A8258E3009C5D3B /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		FA8C58051A8258E3009C5D3B /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		FA8C58061A8258E3009C5D3B /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		FA8C58071A8258E3009C5D3B /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		FA8C58081A8258E3009C5D3B /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		FA8C58091A8258E3009C5D3B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		FA8C580A1A8258E3009C5D3B /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		FA8C580B1A8258E3009C5D3B /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		FA8C580C1A8258E3009C5D3B /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = libFIOApi/dependencies/AFNetworking/AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,25 +272,25 @@
 		1558E5421702EA0100AFCD92 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				15103F9A1702EE0E00232519 /* AFHTTPClient.h */,
-				15103F9B1702EE0E00232519 /* AFHTTPClient.m */,
-				15103F9C1702EE0E00232519 /* AFHTTPRequestOperation.h */,
-				15103F9D1702EE0E00232519 /* AFHTTPRequestOperation.m */,
-				15103F9E1702EE0E00232519 /* AFImageRequestOperation.h */,
-				15103F9F1702EE0E00232519 /* AFImageRequestOperation.m */,
-				15103FA01702EE0E00232519 /* AFJSONRequestOperation.h */,
-				15103FA11702EE0E00232519 /* AFJSONRequestOperation.m */,
-				15103FA21702EE0E00232519 /* AFNetworkActivityIndicatorManager.h */,
-				15103FA31702EE0E00232519 /* AFNetworkActivityIndicatorManager.m */,
-				15103FA41702EE0E00232519 /* AFNetworking.h */,
-				15103FA51702EE0E00232519 /* AFPropertyListRequestOperation.h */,
-				15103FA61702EE0E00232519 /* AFPropertyListRequestOperation.m */,
-				15103FA71702EE0E00232519 /* AFURLConnectionOperation.h */,
-				15103FA81702EE0E00232519 /* AFURLConnectionOperation.m */,
-				15103FA91702EE0E00232519 /* AFXMLRequestOperation.h */,
-				15103FAA1702EE0E00232519 /* AFXMLRequestOperation.m */,
-				15103FAB1702EE0E00232519 /* UIImageView+AFNetworking.h */,
-				15103FAC1702EE0E00232519 /* UIImageView+AFNetworking.m */,
+				FA8C57FA1A8258E3009C5D3B /* AFHTTPRequestOperation.h */,
+				FA8C57FB1A8258E3009C5D3B /* AFHTTPRequestOperation.m */,
+				FA8C57FC1A8258E3009C5D3B /* AFHTTPRequestOperationManager.h */,
+				FA8C57FD1A8258E3009C5D3B /* AFHTTPRequestOperationManager.m */,
+				FA8C57FE1A8258E3009C5D3B /* AFHTTPSessionManager.h */,
+				FA8C57FF1A8258E3009C5D3B /* AFHTTPSessionManager.m */,
+				FA8C58001A8258E3009C5D3B /* AFNetworking.h */,
+				FA8C58011A8258E3009C5D3B /* AFNetworkReachabilityManager.h */,
+				FA8C58021A8258E3009C5D3B /* AFNetworkReachabilityManager.m */,
+				FA8C58031A8258E3009C5D3B /* AFSecurityPolicy.h */,
+				FA8C58041A8258E3009C5D3B /* AFSecurityPolicy.m */,
+				FA8C58051A8258E3009C5D3B /* AFURLConnectionOperation.h */,
+				FA8C58061A8258E3009C5D3B /* AFURLConnectionOperation.m */,
+				FA8C58071A8258E3009C5D3B /* AFURLRequestSerialization.h */,
+				FA8C58081A8258E3009C5D3B /* AFURLRequestSerialization.m */,
+				FA8C58091A8258E3009C5D3B /* AFURLResponseSerialization.h */,
+				FA8C580A1A8258E3009C5D3B /* AFURLResponseSerialization.m */,
+				FA8C580B1A8258E3009C5D3B /* AFURLSessionManager.h */,
+				FA8C580C1A8258E3009C5D3B /* AFURLSessionManager.m */,
 			);
 			name = AFNetworking;
 			sourceTree = "<group>";
@@ -346,20 +346,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8C58111A8258E3009C5D3B /* AFSecurityPolicy.m in Sources */,
 				1558E53B1702E9DE00AFCD92 /* libFIOApi.m in Sources */,
+				FA8C58101A8258E3009C5D3B /* AFNetworkReachabilityManager.m in Sources */,
 				15103F991702EDB900232519 /* Constants.m in Sources */,
-				15103FAD1702EE0E00232519 /* AFHTTPClient.m in Sources */,
-				15103FAE1702EE0E00232519 /* AFHTTPRequestOperation.m in Sources */,
-				15103FAF1702EE0E00232519 /* AFImageRequestOperation.m in Sources */,
-				15103FB01702EE0E00232519 /* AFJSONRequestOperation.m in Sources */,
-				15103FB11702EE0E00232519 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				15103FB21702EE0E00232519 /* AFPropertyListRequestOperation.m in Sources */,
-				15103FB31702EE0E00232519 /* AFURLConnectionOperation.m in Sources */,
-				15103FB41702EE0E00232519 /* AFXMLRequestOperation.m in Sources */,
-				15103FB51702EE0E00232519 /* UIImageView+AFNetworking.m in Sources */,
+				FA8C58121A8258E3009C5D3B /* AFURLConnectionOperation.m in Sources */,
+				FA8C580D1A8258E3009C5D3B /* AFHTTPRequestOperation.m in Sources */,
+				FA8C580F1A8258E3009C5D3B /* AFHTTPSessionManager.m in Sources */,
+				FA8C58131A8258E3009C5D3B /* AFURLRequestSerialization.m in Sources */,
 				1531793617032AFB00F320AF /* FIOAPIClient.m in Sources */,
+				FA8C58151A8258E3009C5D3B /* AFURLSessionManager.m in Sources */,
 				1531793A17032B0700F320AF /* FIORequestBlockOperation.m in Sources */,
+				FA8C580E1A8258E3009C5D3B /* AFHTTPRequestOperationManager.m in Sources */,
 				1531793E17032B1000F320AF /* FIORequestDelegateOperation.m in Sources */,
+				FA8C58141A8258E3009C5D3B /* AFURLResponseSerialization.m in Sources */,
 				1531794117032B2B00F320AF /* FIORequestOperation.m in Sources */,
 				1531794417032B3400F320AF /* FIORequestQueue.m in Sources */,
 				1531794717032B4100F320AF /* RequestOperation.m in Sources */,

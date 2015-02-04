@@ -7,7 +7,7 @@
 //
 
 #import "FIORequestOperation.h"
-#import "AFJSONRequestOperation.h"
+#import "AFHTTPRequestOperation.h"
 #import "FIORequestQueue.h"
 @interface FIORequestOperation (){
   NSString *_apiKey;

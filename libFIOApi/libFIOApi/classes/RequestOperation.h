@@ -8,13 +8,13 @@
 
 #import "ConcurrentOperation.h"
 
-@class AFJSONRequestOperation;
+@class AFHTTPRequestOperation;
 @interface RequestOperation : ConcurrentOperation
 
-@property (nonatomic, readonly) NSURLRequest *request;
-@property (nonatomic, readonly) AFJSONRequestOperation *httpRequest;
+@property (nonatomic, strong, readonly) NSURLRequest *request;
+@property (nonatomic, strong, readonly) AFHTTPRequestOperation *httpRequest;
 
-- (void)requestFinishedWithJSON:(id)JSON;
+- (void)requestFinishedWithJSON:(id)json;
 - (void)requestFailedWithError:(NSError *)error;
 
 @end

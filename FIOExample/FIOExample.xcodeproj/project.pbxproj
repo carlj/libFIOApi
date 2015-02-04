@@ -14,6 +14,9 @@
 		15251F481702EA880015769A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 15251F471702EA880015769A /* Default.png */; };
 		15251F4A1702EA880015769A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15251F491702EA880015769A /* Default@2x.png */; };
 		15251F4C1702EA880015769A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 15251F4B1702EA880015769A /* Default-568h@2x.png */; };
+		FA24B9171A825B3100068760 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24B9161A825B3100068760 /* CFNetwork.framework */; };
+		FA24B9191A825B3700068760 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24B9181A825B3700068760 /* Security.framework */; };
+		FA24B91B1A825B4300068760 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA24B91A1A825B4300068760 /* SystemConfiguration.framework */; };
 		FA990C1D17E7399000D286B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA990C1A17E7399000D286B1 /* AppDelegate.m */; };
 		FA990C1E17E7399000D286B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA990C1C17E7399000D286B1 /* ViewController.m */; };
 		FA990C2017E739A400D286B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA990C1F17E739A400D286B1 /* main.m */; };
@@ -47,6 +50,9 @@
 		15251F471702EA880015769A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Ressources/Default.png; sourceTree = "<group>"; };
 		15251F491702EA880015769A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Ressources/Default@2x.png"; sourceTree = "<group>"; };
 		15251F4B1702EA880015769A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Ressources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA24B9161A825B3100068760 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FA24B9181A825B3700068760 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FA24B91A1A825B4300068760 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FA990C1917E7399000D286B1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		FA990C1A17E7399000D286B1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		FA990C1B17E7399000D286B1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/ViewController.h; sourceTree = SOURCE_ROOT; };
@@ -59,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA24B91B1A825B4300068760 /* SystemConfiguration.framework in Frameworks */,
+				FA24B9191A825B3700068760 /* Security.framework in Frameworks */,
+				FA24B9171A825B3100068760 /* CFNetwork.framework in Frameworks */,
 				15103F941702EC0800232519 /* liblibFIOApi.a in Frameworks */,
 				15251F361702EA880015769A /* UIKit.framework in Frameworks */,
 				15251F381702EA880015769A /* Foundation.framework in Frameworks */,
@@ -118,6 +127,9 @@
 		15251F341702EA880015769A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA24B91A1A825B4300068760 /* SystemConfiguration.framework */,
+				FA24B9181A825B3700068760 /* Security.framework */,
+				FA24B9161A825B3100068760 /* CFNetwork.framework */,
 				15251F351702EA880015769A /* UIKit.framework */,
 				15251F371702EA880015769A /* Foundation.framework */,
 				15251F391702EA880015769A /* CoreGraphics.framework */,
