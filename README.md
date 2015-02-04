@@ -9,7 +9,7 @@ libFIO is a simple utility library for the [forecast.io v2 API](https://develope
 ## Adding to your project
 
 1. ```git clone https://github.com/carlj/libFIOApi.git```
-2. ```cd libFIOApi```, ```git submodule init``` and ```git submodule update```
+2. ```cd libFIOApi```
 3. Drag and Drop the ```libFIOApi.xcodeproj``` to your XCode Project
 4. Add the ```libFIOApi.a``` to your Targets -> Build Phrases -> Target Dependencies
 5. In you Target -> Summary add the ```libFIOApi.a``` to the Linked Frameworks and Libraries 
